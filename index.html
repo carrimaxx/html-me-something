@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap"
       rel="stylesheet"
     />
@@ -12,28 +18,44 @@
   </head>
   <body>
     <header>
-      <h1>Hello, World!</h1>
-      <p>
-        A collection of some of the beautiful places I've visited since 2010.
-      </p>
+      <div class="header-title" id="top">
+        <h1>Hello, World!</h1>
+        <p>
+          A collection of some of the beautiful places I've traveled to since
+          2010.
+        </p>
+      </div>
+
       <ul>
-        <li>Zambales, Philippines</li>
-        <li>Puerto Galera, Philippines</li>
-        <li>Cebu City, Philippines</li>
-        <li>Seoul, South Korea</li>
-        <li>Jeju Island, South Korea</li>
-        <li>Phuket, Thailand</li>
-        <li>Bangkok, Thailand</li>
-        <li>Bohol, Philippines</li>
-        <li>Oslob, Cebu, Philippines</li>
-        <li>Tagaytay City, Philippines</li>
-        <li>Quebec, Canada</li>
-        <li>San Juan, Puerto Rico</li>
+        <a class="header-li" href="#galera"
+          ><li>Puerto Galera, Philippines</li></a
+        >
+        <a class="header-li" href="#zambales"><li>Zambales, Philippines</li></a>
+        <a class="header-li" href="#cebu"><li>Cebu City, Philippines</li></a>
+        <a class="header-li" href="#seoul"><li>Seoul, South Korea</li></a>
+        <a class="header-li" href="#busan"><li>Busan, South Korea</li></a>
+        <a class="header-li" href="#boracay"><li>Boracay, Philippines</li></a>
+        <a class="header-li" href="#makati"
+          ><li>Makati City, Philippines</li></a
+        >
+        <a class="header-li" href="#bgc"><li>BGC, Philippines</li></a>
+        <a class="header-li" href="#bangkok"><li>Bangkok, Thailand</li></a>
+        <a class="header-li" href="#phuket"><li>Phuket, Thailand</li></a>
+        <a class="header-li" href="#bohol"><li>Bohol, Philippines</li></a>
+        <a class="header-li" href="#oslob"><li>Oslob, Cebu, Philippines</li></a>
+        <a class="header-li" href="#tagaytay"
+          ><li>Tagaytay City, Philippines</li></a
+        >
+        <a class="header-li" href="#chicago"><li>Chicago, USA</li></a>
+        <a class="header-li" href="#quebec"><li>Quebec, Canada</li></a>
+        <a class="header-li" href="#puertorico"
+          ><li>San Juan, Puerto Rico</li></a
+        >
       </ul>
     </header>
     <main>
       <div id="wrapper">
-        <article>
+        <article id="galera">
           <div class="title">
             <h2>Puerto Galera, Philippines</h2>
             <p>February 2010</p>
@@ -42,136 +64,207 @@
             src="https://asiadivers.com/wp-content/uploads/2020/07/coral-reefs-2728211.jpg"
             alt=""
           />
-          <p></p>
+          <p>
+            Puerto Galera is 2-3 hours away from Manila so this is a place Metro
+            Manila dwellers frequently go to. Puerta Galera has dozens of Dive
+            sites suitable for all levels of scuba diving experience.
+          </p>
         </article>
-        <article>
+        <article id="#zambales">
           <div class="title">
             <h2>Zambales, Philippines</h2>
             <p>May 2010</p>
           </div>
-
-          <p></p>
           <img
             src="https://www.awanderfulsole.com/wp-content/uploads/2018/04/16bd1e62-107d-4730-8cde-db3b40297741-1024x767.jpg"
             alt=""
           />
+          <p>
+            Only a few hours away by car from Manila, this was my second trip to
+            Zambales but my first time in Potipot Island. The water is pristine
+            and the sand is almost as fine as Boracay. I went with my friends
+            for a long weekend trip. A year before, I tried surfing for the
+            first time in San Narciso, Zambales.
+          </p>
         </article>
-        <article>
+        <article id="cebu">
           <div class="title">
             <h2>Cebu City, Philippines</h2>
             <p>November 2011</p>
           </div>
-
-          <p></p>
-
           <img
             src="https://s29081.pcdn.co/wp-content/uploads/2018/11/INAMBAKAN-FALLS-GINATILAN-CEBU-02432.jpg.optimal.jpg"
             alt=""
           />
+          <p>
+            Working as a flight attendant, this was one of the places I
+            frequently stayed at and easily one of my favorites. The food is
+            amazing, the cost of living is cheaper than in Manila, highly
+            urbanized yet numerous white sand beaches and falls are just a short
+            drive away.
+          </p>
         </article>
-        <article>
+        <article id="seoul">
           <div class="title">
             <h2>Seoul, South Korea</h2>
             <p>December 2011</p>
           </div>
-
-          <p></p>
           <img
             src="https://cdn.pixabay.com/photo/2017/03/21/17/10/nightlife-2162772_1280.jpg"
             alt=""
           />
+          <p>
+            The first regional/out-of-the-country flight working as a flight
+            attendant was to this vibrant city. Known for many things but the
+            cafes and street food are probably what stood out to me the most.
+          </p>
         </article>
-        <article>
+        <article id="busan">
           <div class="title">
-            <h2>Jeju Island, South Korea</h2>
+            <h2>Busan, South Korea</h2>
             <p>January 2012</p>
           </div>
-
-          <p></p>
           <img
-            src="https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2018/05/30/c1c4b7d0-625e-11e8-82ea-2acc56ad2bf7_1280x720_180628.JPG?itok=kHmo9dMD"
+            src="https://www.cntravellerme.com/public/images/2020/01/23/shutterstock_740263246.jpg"
             alt=""
           />
+          <p>
+            Known for its beaches, mountains, and temples but also probably
+            because of the Korean movie about zombies, Train to Busan.
+          </p>
         </article>
-        <article>
+        <article id="boracay">
+          <div class="title">
+            <h2>Boracay, Philippines</h2>
+            <p>February 2013</p>
+          </div>
+          <img
+            src="https://www.traveldailymedia.com/assets/2020/08/boracay2.jpg"
+            alt=""
+          />
+          <p>
+            The most popular beach in the Philippines, and where most outgoing
+            people would probably really enjoy. The food is amazing and lots of
+            activities to do. I went with friends for a long weekend but we were
+            able to squeeze in a lot of
+            <span>food in our bellies</span> activities such as banana boat
+            riding, beach paragliding, and kayaking.
+          </p>
+        </article>
+        <article id="makati">
           <div class="title">
             <h2>Makati, Philippines</h2>
-            <p>2013</p>
           </div>
-
-          <p></p>
           <img
             src="https://gttp.imgix.net/225972/x/0/makati-city-travel-guide-hotels-things-to-do-itinerary-amp-tips-9.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883"
             alt=""
           />
+          <p>
+            The central business district of the Philippines. I've been here
+            uncountable times but didn't work in until 2014. One of the foodie
+            places in Metro Manila, several restaurants open every week here and
+            some of the top Michelin star restaurants in the PH are found here.
+          </p>
         </article>
-        <article>
+        <article id="bgc">
           <div class="title">
-            <h2>BGC, Philippines</h2>
-            <p>2014</p>
+            <h2>Bonifacio Global City, Philippines</h2>
           </div>
-
-          <p></p>
           <img
             src="https://cf.bstatic.com/images/hotel/max1024x768/167/167958543.jpg"
             alt=""
           />
+          <p>
+            Right next to Makati, and is as vibrant, diverse, and busy as
+            Makati. Just like the former, you'll find just about any cuisine
+            here, from Japanese to French and even Balkan food.
+          </p>
         </article>
-        <article>
+        <article id="bangkok">
           <div class="title">
             <h2>Bangkok, Thailand</h2>
             <p>November 2015</p>
           </div>
-
-          <p></p>
           <img
             src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/07/ccimage-shutterstock_193572950.jpg"
             alt=""
           />
+          <p>
+            Restaurant/food crawling is probably the best way to enjoy Bangkok.
+            The temples are interesting as well but they tend to get crowded, so
+            the food was definitely the highlight of our trip here. It's also
+            amazing how we purchased flight tickets to Phuket on the same day at
+            the airport yet they were very reasonably priced and the service was
+            great.
+          </p>
         </article>
-        <article>
+        <article id="phuket">
           <div class="title">
             <h2>Phuket, Thailand</h2>
             <p>November 2015, November 2016</p>
           </div>
-
-          <p></p>
           <img src="images/nai-harn-beach.jpg" alt="" />
+          <p>
+            Originally wanting to go to Chiang Mai, this was my husband and I's
+            second choice but it turned out to be a great choice, we went back a
+            year after. Nai Harn beach in the south, next to Rawaii is probably
+            the best spot and most family/couple-friendly beach. Just like the
+            locals, we drove around in scooters here which was a lot of fun.
+          </p>
         </article>
-        <article>
+        <article id="bohol">
           <div class="title">
             <h2>Bohol, Philippines</h2>
             <p>March 2016</p>
           </div>
-
-          <p></p>
-          <img src="images/panglao.jpg" alt="" />
+          <img
+            src="https://www.magtxt.com/sites/default/files/image_article/The%20Chocolate%20Hills.PNG"
+            alt=""
+          />
+          <p>
+            Some of the most popular tourist spots/beaches in the Philippines
+            are in Bohol. The famous chocolate hills, the tarsier - a mammal
+            that can get a heart attack if startled, Panglao beach, hot
+            chocolate are some of the things it is known for.
+          </p>
         </article>
-        <article>
+        <article id="oslob">
           <div class="title">
             <h2>Oslob, Cebu, Philippines</h2>
             <p>April 2016</p>
           </div>
-
-          <p></p>
           <img
             src="https://i0.wp.com/www.projectlupad.com/wp-content/uploads/2018/02/Whale-Shark-Oslob-Cebu-Philippines-Aerial-View-Project-LUPAD.jpeg?fit=2048%2C1535&ssl=1"
             alt=""
           />
+          <p>
+            Due to its proximity to Bohol, we were able to go to Cebu via an
+            hour-long boat trip. We originally wanted to go to the famous
+            Kawasan falls and experience canyoneering, but due to the dry
+            weather we only got to do whale shark (butanding) watching, which
+            already made the trip very memorable.
+          </p>
         </article>
-        <article>
+        <article id="tagaytay">
           <div class="title">
             <h2>Tagaytay City, Philippines</h2>
             <p>July 2017</p>
           </div>
-
-          <p></p>
           <img
             src="https://images.pexels.com/photos/3870281/pexels-photo-3870281.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
             alt=""
           />
+          <p>
+            An hour away from home, this is a place we frequented to during
+            family trips and weekend trips with friends. There are countless
+            good restaurants, activities to do, and sights to see. This is also
+            where my husband and I exchanged our vows. Famous for the cooler
+            climate due to higher altitudes and Taal - an island within an
+            island within an island - and its volcano, which recently made news
+            due to the explosive eruption.
+          </p>
         </article>
-        <article>
+        <article id="chicago">
           <div class="title">
             <h2>Chicago, USA</h2>
             <p>October 2017</p>
@@ -183,44 +276,51 @@
             alt=""
           />
         </article>
-        <article>
-          <div class="title">
-            <h2>Wisconsin, USA</h2>
-            <p>January 2018</p>
-          </div>
-
-          <p></p>
-          <img
-            src="https://i2.wp.com/wheelchairtravel.org/wp-content/uploads/2020/01/milwaukee-v2020-header.jpg?fit=2500%2C1333&ssl=1"
-            alt=""
-          />
-        </article>
-        <article>
+        <article id="quebec">
           <div class="title">
             <h2>Quebec, Canada</h2>
             <p>October 2018</p>
           </div>
-
-          <p></p>
           <img
-            src="https://cdn.thecrazytourist.com/wp-content/uploads/2018/07/ccimage-shutterstock_287861729.jpg"
+            src="https://theculturetrip.com/wp-content/uploads/2015/08/frontenac-castle-in-old-quebec-city-shutterstock_428039830.jpg"
             alt=""
           />
+          <p>
+            For me, charming and dreamy are the best words to describe Quebec.
+            We went in the fall to see the colors. Cafes, poutine, chocolate,
+            cheese, pastries, and craft beer everywhere.
+          </p>
         </article>
-        <article>
+        <article id="puertorico">
           <div class="title">
             <h2>San Juan, Puerto Rico</h2>
             <p>March 2019</p>
           </div>
-
-          <p></p>
           <img
             src="https://addisonmagazine.com/wp-content/uploads/2017/06/iStock-531709378.jpg"
             alt=""
           />
+          <p>
+            San Juan's coffee, food, and the art scene such as graffitis,
+            murals, colorful houses are outstanding. The windy beach was very
+            popular among kite surfers, and there are 3(!! - there are only 5 in
+            the world) bioluminescent bays in Puerto Rico alone.
+          </p>
         </article>
+        <div class="btn-div">
+          <a href="#top" type="button" id="btn"
+            ><i class="fas fa-arrow-circle-up"></i
+          ></a>
+        </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>
+        &copy; 2020
+        <a href="https://github.com/carrimaxx"
+          >Maricar (Kai) Lusuegro-Walters</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

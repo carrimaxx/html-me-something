@@ -13,11 +13,20 @@ ul {
   list-style: none;
 }
 
+/* Variables */
+:root {
+  --main-text-color: #303030;
+  --body-bg-color: white;
+  --main-bg-color: rgba(250, 245, 228, 0.35);
+  --articles-bg-color: #d9e4dd;
+  --title-font: "Merriweather", serif;
+  --p-font: "Roboto", sans-serif;
+}
+
 body {
-  /* font-family: 'Merriweather', serif; */
-  font-family: "Roboto", sans-serif;
-  background-color: f6f6f6;
-  color: #303030;
+  font-family: var(--p-font);
+  background-color: var(--body-bg-color);
+  color: var(--main-text-color);
 }
 
 /* Header  */
@@ -35,43 +44,140 @@ header {
   width: 100%;
   height: 65vh;
   overflow: hidden;
-  /* background-image: url(./images/quebec-2473837_1920.jpg); */
 }
 
+.header-title {
+  background-color: rgba(250, 245, 228, 0.35);
+  width: 85vw;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 6px rgba(250, 245, 228, 0.35);
+  margin: 5% auto;
+  padding: 2.5%;
+  text-align: center;
+}
+h1 {
+  font-size: clamp(2rem, 4rem, 5.5rem);
+  font-family: var(--title-font);
+}
+.header-title p {
+  margin-top: 1.5%;
+}
+ul {
+  width: 80vw;
+  margin: 1% auto;
+  text-align: center;
+}
+.header-li {
+  display: inline-block;
+  text-decoration: none;
+
+  background-color: antiquewhite;
+  color: var(--main-text-color);
+  border-radius: 15px;
+  padding: 1%;
+  margin: 1%;
+  transition: transform 100ms;
+}
+.header-li:hover {
+  transform: scale(1.05);
+  background-color: #e1d3c1;
+  font-weight: 600;
+}
+
+/* Main  */
 #wrapper {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
-  margin: 0 auto;
+  margin: 2% auto;
 }
 article {
   width: 48%;
-  background-color: #f0f5f9;
-  border: 0.5px solid gray;
+  height: 60vh;
+  padding: 0.5%;
+  background-color: var(--main-bg-color);
   border-radius: 5px;
   margin: 0.5% auto;
-}
-
-article img {
-  width: 100%;
-  height: 65%;
-  padding: 1%;
-  transition: transform 300ms;
-  /* border: 0px;
-  border-radius: 5px; */
-}
-
-article img:hover {
-  transform: scale(1.15);
-}
-
-article h2,
-article p {
+  box-shadow: 2px 2px 5px 0#DCDCDC;
   text-align: center;
 }
-
+article img {
+  width: 100%;
+  height: 50%;
+  padding: 1%;
+  transition: transform 300ms;
+}
+article img:hover {
+  transform: scale(1.1);
+}
+.title {
+  padding: 2%;
+}
 h2 {
   font-family: "Merriweather", serif;
-  font-size: 1.25rem;
+  font-size: clamp(0.9rem, 1.5rem, 1.75rem);
+}
+article p {
+  font-size: 0.9rem;
+  padding: 1%;
+}
+span {
+  text-decoration: line-through;
+}
+
+/* Back to top button  */
+.btn-div {
+  width: 100%;
+  margin: 2%;
+}
+#btn {
+  float: right;
+  text-decoration: none;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  padding: 1%;
+  color: var(--main-text-color);
+}
+
+/* Footer  */
+footer {
+  background-color: #835858;
+  color: #fff;
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  padding: 3%;
+}
+footer a {
+  /* text-decoration: none; */
+  color: #fff0f0;
+  font-weight: 400;
+}
+
+/* https://colorhunt.co/palette/206782 */
+/* https://www.w3schools.com/colors/colors_shades.asp */
+
+/* Media Queries  */
+@media only screen and (max-width: 760px) {
+  article {
+    width: 80%;
+    height: 55vh;
+  }
+  .header-li {
+    font-size: 0.85rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  article {
+    width: 100%;
+    height: 65vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  footer {
+    height: 10vh;
+    font-size: 0.8rem;
+  }
 }
