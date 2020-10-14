@@ -18,9 +18,9 @@ ul {
   --main-text-color: #303030;
   --body-bg-color: white;
   --main-bg-color: rgba(250, 245, 228, 0.35);
-  --articles-bg-color: #d9e4dd;
   --title-font: "Merriweather", serif;
-  --p-font: "Roboto", sans-serif;
+  --p-font: "Source Sans Pro", sans-serif;
+  --footer-bg-color: #835858;
 }
 
 body {
@@ -42,7 +42,7 @@ header {
       no-repeat center center fixed;
   background-size: cover;
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -64,18 +64,17 @@ h1 {
 }
 ul {
   width: 80vw;
-  margin: 1% auto;
+  margin: 0.5% auto;
   text-align: center;
 }
 .header-li {
   display: inline-block;
   text-decoration: none;
-
   background-color: antiquewhite;
   color: var(--main-text-color);
   border-radius: 15px;
   padding: 1%;
-  margin: 1%;
+  margin: 0.5%;
   transition: transform 100ms;
 }
 .header-li:hover {
@@ -86,19 +85,19 @@ ul {
 
 /* Main  */
 #wrapper {
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
   margin: 2% auto;
 }
 article {
-  width: 48%;
-  height: 60vh;
+  width: 33%;
+  height: 65vh;
   padding: 0.5%;
   background-color: var(--main-bg-color);
   border-radius: 5px;
-  margin: 0.5% auto;
+  margin: 1% auto;
   box-shadow: 2px 2px 5px 0#DCDCDC;
   text-align: center;
 }
@@ -109,23 +108,25 @@ article img {
   transition: transform 300ms;
 }
 article img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 .title {
   padding: 2%;
 }
 h2 {
-  font-family: "Merriweather", serif;
+  font-family: var(--title-font);
   font-size: clamp(0.9rem, 1.5rem, 1.75rem);
 }
 article p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 1%;
 }
 span {
   text-decoration: line-through;
 }
-
+.fireworks {
+  color: var(--footer-bg-color);
+}
 /* Back to top button  */
 .btn-div {
   width: 100%;
@@ -138,11 +139,12 @@ span {
   border-radius: 50%;
   padding: 1%;
   color: var(--main-text-color);
+  box-shadow: 2px 2px 5px 0#DCDCDC;
 }
 
 /* Footer  */
 footer {
-  background-color: #835858;
+  background-color: var(--footer-bg-color);
   color: #fff;
   width: 100%;
   height: 15vh;
@@ -150,28 +152,27 @@ footer {
   padding: 3%;
 }
 footer a {
-  /* text-decoration: none; */
   color: #fff0f0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-/* https://colorhunt.co/palette/206782 */
-/* https://www.w3schools.com/colors/colors_shades.asp */
-
 /* Media Queries  */
+@media only screen and (max-width: 1080px) {
+  article {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 760px) {
+  header {
+    height: 65vh;
+  }
   article {
     width: 80%;
-    height: 55vh;
-  }
-  .header-li {
-    font-size: 0.85rem;
   }
 }
 @media only screen and (max-width: 600px) {
   article {
     width: 100%;
-    height: 65vh;
   }
   h1 {
     font-size: 2.5rem;
